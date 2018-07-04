@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-This project is deployed on Heroku at 
+This project is deployed on Heroku at https://lovely-mammoth-cave-39318.herokuapp.com/
 
 ## Development server
 
