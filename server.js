@@ -22,14 +22,13 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/my_app'));
+app.use(express.static('./dist/my-app'));
 
 app.get('/*', function(req,res) {
-    
-res.sendFile(path.join(__dirname,'/dist/my_app/index.html'));
+     res.sendFile(path.join(__dirname,'/dist/my-app/index.html'));
 });
 
 
-
-// app.use(forceSSL());
+console.log("app listening")
+// app.use(forceSSL()); 
 app.listen (process.env.PORT || 8080); 
