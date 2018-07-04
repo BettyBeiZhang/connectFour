@@ -1,0 +1,36 @@
+/* style for GameComponent component template */
+.container {
+    background-color: #f57921;
+    width: 350px;
+    height: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Galada', cursive;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background: #bbb;
+}
+
+.play-again {
+  display: none;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+  width: 50%;
+  background: #398bd4;
+  color: white;
+  text-decoration: none;
+  font-family: helvetica;
+}

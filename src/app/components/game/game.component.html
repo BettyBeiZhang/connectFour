@@ -1,0 +1,22 @@
+<!-- Main connect four game component html template -->
+<div class="container vertical center">
+    <h1>Connect Four</h1>
+    <h2>{{config.playerPrefix}}<span>{{currentPlayer}}</span></h2>
+    <a href="#" *ngIf="showButton" class="play-again" [ngStyle]="showPlayAgain" (click)="playAgainClick()">Play Again</a>
+    <div>
+        <table>
+            <tbody>
+                <tr *ngFor="let button of board; index as i">
+                    <td><button #button type="button" xPos="0" [attr.yPos]="i" [ngStyle]="getColor(0,i)" (click)="btnClick(0, i)"></button></td>
+                    <td><button #button type="button" xPos="1" [attr.yPos]="i" [ngStyle]="getColor(1,i)" (click)="btnClick(1, i)"></button></td>
+                    <td><button #button type="button" xPos="2" [attr.yPos]="i" [ngStyle]="getColor(2,i)" (click)="btnClick(2, i)"></button></td>
+                    <td><button #button type="button" xPos="3" [attr.yPos]="i" [ngStyle]="getColor(3,i)" (click)="btnClick(3, i)"></button></td>
+                    <td><button #button type="button" xPos="4" [attr.yPos]="i" [ngStyle]="getColor(4,i)" (click)="btnClick(4, i)"></button></td>
+                    <td><button #button type="button" xPos="5" [attr.yPos]="i" [ngStyle]="getColor(5,i)" (click)="btnClick(5, i)"></button></td>
+                    <td><button #button type="button" xPos="6" [attr.yPos]="i" [ngStyle]="getColor(6,i)" (click)="btnClick(6, i)"></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
